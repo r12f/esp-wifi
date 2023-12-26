@@ -1729,7 +1729,7 @@ macro_rules! esp_wifi_result {
 }
 
 #[cfg(feature = "embassy-net")]
-pub(crate) mod embassy {
+pub mod embassy {
     use super::*;
     use embassy_net::driver::{Capabilities, Driver, HardwareAddress, RxToken, TxToken};
     use embassy_sync::waitqueue::AtomicWaker;
